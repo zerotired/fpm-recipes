@@ -15,7 +15,7 @@ class Graylog2Server < FPM::Cookery::Recipe
   arch	      'all'
   section     'admin'
 
-  depends     'java-runtime-headless', 'mongodb | mongodb-10gen', 'elasticsearch'
+  depends     'openjdk-7-jre-headless', 'mongodb20-10gen', 'elasticsearch'
 
   config_files '/etc/graylog2.conf elasticsearch.yml.example'
 
